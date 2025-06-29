@@ -1,0 +1,11 @@
+<h2>User Profile</h2>
+
+<ul *ngIf="user && user.id">
+  <li><strong>ID:</strong> {{ user.id }}</li>
+  <li><strong>Name:</strong> {{ user.name }}</li>
+  <li><strong>Email:</strong> {{ user.email }}</li>
+  <li><strong>Department:</strong> {{ user.department }}</li>
+  <li><strong>Gender:</strong> {{ user.gender }}</li>
+</ul>
+
+<p *ngIf="!user || !user.id">Loading or no data found...</p>
